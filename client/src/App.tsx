@@ -1,5 +1,6 @@
 import React from 'react';
 import Navheader from './components/Navheader/Navheader';
+import Dashboard from './components/Dashboard/Dashboard';
 
 import { ThemeProvider, createTheme } from "@mui/material";
 
@@ -18,7 +19,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>  
       <Navheader/>
-      <h1 style={{display: "flex", justifyContent: "center"}}>My Chores Web</h1>
+      <Dashboard/>
     </ThemeProvider>
   );
 }
