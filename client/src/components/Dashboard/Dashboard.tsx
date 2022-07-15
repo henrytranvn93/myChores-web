@@ -27,7 +27,7 @@ export default function Dashboard({}: Props) {
     <>
     <div>Dashboard with members in house with tasks</div>
     {tasks.map(task => 
-      <Task/>
+      <Task {...task}/>
     )}
     </>
   )
