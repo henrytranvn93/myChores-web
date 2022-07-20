@@ -12,11 +12,12 @@ interface TaskProps {
 }
 
 export default function Task({isDone, description, type, assignee, reward, id}: TaskProps) {
-  return <div>
+  return <div style={{display: "flex", alignItems: "center", width: "400px", justifyContent: "space-around"}}>
     <input type="checkbox"/>
     <label>{description}</label>
     <p>Assignee: {assignee}</p>
-    <h3>{reward}</h3>
+    <p><strong>{reward}</strong></p>
+    <p>Type: {type}</p>
 
   </div>;
 }
