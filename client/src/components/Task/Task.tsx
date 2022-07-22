@@ -19,6 +19,7 @@ export default function Task({isDone, description, type, assignee, reward, id}: 
     <p><strong>{reward}</strong></p>
     <p>Type: {type}</p>
     <p>Status: {isDone}</p>
+    <p>ID of task: {id}</p>
 
   </div>;
 }
